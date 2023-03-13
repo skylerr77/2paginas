@@ -1,0 +1,88 @@
+/*reset para quitar los margenes de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CONFIGURACION DE HTML Y BODY*/
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url('https://images.pexels.com/photos/2383122/pexels-photo-2383122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+/*HEADER*/
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    position: absolute;
+    width: 100%;
+}
+header>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header>div div{
+    position: absolute;
+    left: 10px;
+    top:5px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/013/078/569/original/illustration-of-cute-colored-cat-cartoon-cat-image-in-format-suitable-for-children-s-book-design-elements-introduction-of-cats-to-children-books-or-posters-about-animal-free-png.png);
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    padding-left: 50px;
+    position: relative;
+    
+}
+.menu>li{
+    padding: 10px;
+}
+
+.submenu{
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    top: 30px;
+}
+#mostrar:hover .submenu{
+    visibility: visible;
+}
+.submenu li:hover{
+    background-color: green;
+}
+/*MAIN*/
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2{
+    background-color: greenyellow;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+

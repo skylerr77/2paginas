@@ -1,0 +1,110 @@
+/*reset para quitar los margenes de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CONFIGURACION DE HTML Y BODY*/
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url('./kitten-asleep-in-a-pot-1995961_960_720.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+/*HEADER*/
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    position: absolute;
+    width: 100%;
+}
+header>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header>div div{
+    position: absolute;
+    left: 10px;
+    top:5px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/013/078/569/original/illustration-of-cute-colored-cat-cartoon-cat-image-in-format-suitable-for-children-s-book-design-elements-introduction-of-cats-to-children-books-or-posters-about-animal-free-png.png);
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    padding-left: 50px;
+    position: relative;
+    
+}
+.menu>li{
+    padding: 10px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.submenu{
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    top: 30px;
+}
+#mostrar:hover .submenu{
+    visibility: visible;
+}
+.submenu li:hover{
+    background-color: burlywood;
+}
+/*MAIN*/
+main{
+    height: 100%;
+    display: flex;
+    position: absolute;
+    padding: 100px 570px;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.nosotros{
+    display: flex;
+    background-color: rgba(205, 143, 50, 0.808) ;
+    position: absolute;
+    width: 1000px;
+    height: 350px;
+    left: 200px;
+    top: 150px;
+    
+}
+.imagen{
+    background-image: url('https://www.pawworld.com.co/wp-content/uploads/2022/09/peluqueria_Gatos.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+.texto{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 500px;
+    bottom: 1px;
+}
