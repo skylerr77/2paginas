@@ -14,7 +14,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  
 }
 /*HEADER*/
 header{
@@ -69,10 +68,54 @@ nav{
 }
 /*MAIN*/
 main{
-    height: 100%;
+    padding-top: 100px;
+    border: solid 2px blue;
+    background-color: rgba(0, 0, 7, 0.322);
+    color: white;
+}
+.nosotros{
+    border: solid 2px green;
+    height: 350px;
+    padding: 0 50px;
+    
+}
+.nosotros h2{
+    text-align: center;
+    
+}
+.nosotros div:first-of-type{
     display: flex;
-    position: absolute;
-    padding: 100px 570px;
+    gap: 40px;
+}
+
+.nosotros div:first-of-type p{
+    display: flex;
+    align-items: center;
+}
+
+
+.servicios{
+    border: solid 2px magenta;
+}
+.servicios h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.parrafos{
+    display: flex;
+    justify-content: space-between;
+}
+.servicio1{
+    padding: 50px;
+}
+.servicio2{
+    padding: 50px;
+}
+.servicio1 h2{
+    text-align: center;
+}
+.servicio2 h2{
+    text-align: center;
 }
 .icon {
     display: inline-block;
@@ -82,6 +125,7 @@ main{
     stroke: currentColor;
     fill: currentColor;
 }
+/*
 .nosotros{
     display: flex;
     background-color: rgba(205, 143, 50, 0.808) ;
@@ -91,16 +135,17 @@ main{
     left: 200px;
     top: 150px;
     
-}
+}*/
 .imagen{
     background-image: url('https://www.pawworld.com.co/wp-content/uploads/2022/09/peluqueria_Gatos.png');
-    background-size: cover;
-    width: 300px;
+    background-size: 100% 100%;
+    width: 100%;
     height: 300px;
-    position: absolute;
-    left: 100px;
-    bottom: 50px;
+    background-color: black;
+    
+   
 }
+/*
 .texto{
     width: 400px;
     height: 300px;
@@ -108,3 +153,10 @@ main{
     left: 500px;
     bottom: 1px;
 }
+.servicios{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 10px;
+} */
