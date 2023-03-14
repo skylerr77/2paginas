@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI SEGUNDO MENÚ</title>
-    <Link rel="stylesheet" href="./pagina2.css">
+    <Link rel="stylesheet" href="./pagina2.css">   
 </head>
 <body>
     <header>
@@ -15,22 +15,21 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><svg class="icon icon-home3"><use xlink:href="#icon-home3"></use><symbol id="icon-home3" viewBox="0 0 32 32">
-                    <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>
-                    </symbol></svg></li>
-                <li>Nosotros</li>
-                <li id="mostrar">Servicios
+                <li><a href="./index.html" target="_blank"><svg class="icon icon-home3"><use xlink:href="#icon-home3"></use><symbol id="icon-home3" viewBox="0 0 32 32">
+                    <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path></symbol></svg></a></li>
+                <li><a href="#nos">Nosotros</a></li>
+                <li id="mostrar"><a href="#ser">Servicio</a>s
                     <ul class="submenu">
-                        <li>Servicios1</li>
-                        <li>Servicios2</li>
+                        <li><a href="#ser1">Servicios1</a></li>
+                        <li><a href="#ser2">Servicios2</a></li>
                     </ul>
                 </li>
-                <li>Contactanos</li>
+                <li><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="nosotros">
+        <div id="nos" class="nosotros">
             <h2>NOSOTROS</h2>
             <div>
                 <div class="imagen"></div>
@@ -38,26 +37,30 @@
             </div>
         </div>
         <div class="servicios" id="servicios">
-            <h2>SERVICIOS</h2>
+            <h2 id="ser">SERVICIOS</h2>
             <div class="parrafos">
                 <div class="servicio1">
-                <h2>Servicios 1</h2>
+                <h2 id="ser1">Servicios 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi doloribus libero aliquam aut architecto beatae aliquid eligendi officiis quos. Error iusto, laborum unde assumenda pariatur rerum repudiandae magnam itaque?</p>
                 </div>
                 <div class="servicio2">
-                <h2>Servicios 2</h2>
+                <h2 id="ser2">Servicios 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, et laboriosam vero excepturi aspernatur reiciendis pariatur in, ipsum dolores nobis aut quo neque tempore. Ut fugiat enim odio pariatur cumque.</p>
                 </div>
             </div>
         </div>
         <div class="contacto">
-            <h2>CONTACTO</h2>
+            <h2 id="contacto">CONTACTO</h2>
             <form action="get">
-                Nombre<input type="text" name="nombre">
-                Email<input type="email" name="email">
-                telefono<input type="tel" name="telefono">
-                Asunto<textarea></textarea>
-                <button>ENVIAR</button>
+                <div><label for="name">Nombre</label>
+                <input type="text" id="name" name="nombre"></div>
+                <div><label for="email">Email</label>
+                <input type="email" id="email" name="email"></div>
+                <div><label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono"></div>
+                <div><label for="area">Asunto</label> 
+                <textarea id="area"></textarea></div>
+                <button type="submit">ENVIAR</button>
             </form>
         </div>
     </main>
